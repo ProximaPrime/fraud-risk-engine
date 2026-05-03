@@ -54,10 +54,10 @@ The model is highly effective at detecting fraud cases, prioritizing recall over
 ```text
 credit-card-fraud-detection/
 │
-├── notebook.ipynb
+├── Credit Card Fraud Detection | ML Pipeline (ROC-AUC 0.98).ipynb
 ├── fraud_predictions.csv
 ├── model_summary.csv
-├── requirements.txt
+├── requirements
 └── README.md
 ```
 
