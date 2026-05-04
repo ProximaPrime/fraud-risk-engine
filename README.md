@@ -145,8 +145,8 @@ The result is a robust, interpretable, and practical fraud detection engine suit
 
 ---
 
-👤 Author
+## 👤 Author
 
-Abiodun Adeteye
-Machine Learning Engineer | Data & AI Systems Builder
-Focused on building real-world, production-ready ML solutions
+Abiodun Adeteye  
+Data Scientist | Machine Learning & Analytics  
+Focused on building data-driven, real-world solutions and production-ready ML systems
