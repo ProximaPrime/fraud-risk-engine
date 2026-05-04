@@ -86,7 +86,7 @@ credit-card-fraud-detection/
 ├── model_summary.csv
 ├── cost_analysis.csv
 ├── risk_distribution.csv
-├── requirements.txt
+├── requirements
 └── README.md
 ```
 ---
