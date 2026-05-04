@@ -65,11 +65,12 @@ High| 81
 
 💰 Cost Analysis (Business Perspective)
 
-Metric| Value
-False Positive Cost| 85
-False Negative Cost| 850
-Total Cost| 935
-Avg Cost per Transaction| 0.0164
+| Metric                     | Value   |
+|--------------------------|--------|
+| False Positive Cost      | 85     |
+| False Negative Cost      | 850    |
+| Total Cost               | 935    |
+| Avg Cost per Transaction | 0.0164 |
 
 ✔ Fraud loss dominates system cost (real-world behavior)
 ✔ Model balances fraud detection vs customer friction
