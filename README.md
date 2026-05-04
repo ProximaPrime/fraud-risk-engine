@@ -89,6 +89,15 @@ credit-card-fraud-detection/
 ├── requirements.txt
 └── README.md
 ```
+---
+
+## 📦 Requirements
+
+- Python 3.9+
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
 
 ---
 
