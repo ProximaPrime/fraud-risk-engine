@@ -20,10 +20,11 @@ This project builds an end-to-end fraud detection pipeline that:
 
 📊 Model Performance
 
-Metric| Value
-ROC-AUC| 0.9868
-Precision| 0.8265
-Recall| 0.8265
+| Metric    | Value   |
+|----------|--------|
+| ROC-AUC  | 0.9868 |
+| Precision| 0.8265 |
+| Recall   | 0.8265 |
 
 🔍 Interpretation
 
