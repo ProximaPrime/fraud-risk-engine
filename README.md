@@ -81,7 +81,7 @@ Avg Cost per Transaction| 0.0164
 ```text
 credit-card-fraud-detection/
 │
-├── notebook.ipynb
+├── Credit Card Fraud Detection.ipynb
 ├── fraud_predictions.csv
 ├── model_summary.csv
 ├── cost_analysis.csv
