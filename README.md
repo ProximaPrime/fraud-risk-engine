@@ -1,85 +1,152 @@
-# 💳 Credit Card Fraud Detection | ML Pipeline (ROC-AUC 0.98)
+💳 Credit Card Fraud Detection — ML Risk Engine
 
-## 👤 Author
-**Abiodun Adeteye**
-
----
-
-## 📌 Project Overview
-This project is an end-to-end machine learning pipeline designed to detect fraudulent credit card transactions using a highly imbalanced dataset.
-
-Multiple machine learning models are trained, compared, and optimized using cross-validation, ROC-AUC scoring, and threshold tuning to maximize fraud detection performance.
-
-The final system prioritizes **high recall for fraud cases**, ensuring most fraudulent transactions are successfully detected.
+A production-style machine learning system for detecting fraudulent credit card transactions in highly imbalanced data.
+This project goes beyond classification to deliver a risk scoring engine, threshold-optimized decision system, and cost-aware fraud analysis, similar to real-world financial fraud detection pipelines.
 
 ---
 
-## 🚀 Key Highlights
-- End-to-end machine learning pipeline (data → training → evaluation → prediction)
-- Multi-model comparison (Logistic Regression, Random Forest, Gradient Boosting)
-- Handles extreme class imbalance
-- Cross-validation for robust model evaluation
-- Threshold optimization for improved fraud detection
-- Strong final performance (~0.98 ROC-AUC)
+🚀 Overview
+
+This project builds an end-to-end fraud detection pipeline that:
+
+- Trains and evaluates multiple machine learning models
+- Optimizes decision thresholds using precision-recall tradeoff
+- Generates probability-based fraud risk scores (0–100)
+- Segments transactions into Low / Medium / High risk levels
+- Incorporates cost-sensitive evaluation to simulate real financial impact
+- Produces clean, structured outputs for analysis and deployment
 
 ---
 
-## 📊 Results
-- ROC-AUC: **0.9798 (~0.98)**
-- Fraud Recall: **~0.91**
-- Fraud Precision: **~0.19**
-- Overall Accuracy: ~0.99
+📊 Model Performance
 
-The model is highly effective at detecting fraud cases, prioritizing recall over precision due to the nature of fraud detection problems.
+Metric| Value
+ROC-AUC| 0.9868
+Precision| 0.8265
+Recall| 0.8265
 
----
+🔍 Interpretation
 
-## 🧠 Key Insights
-- ROC-AUC is the most reliable metric for imbalanced classification
-- High recall is more important than accuracy in fraud detection
-- Random Forest performed best among tested models
-- Threshold tuning significantly improves real-world fraud capture
-- Class imbalance has a major impact on model behavior
+- Strong ability to separate fraud vs normal transactions
+- Balanced detection performance (precision ≈ recall)
+- Low false positive rate with high fraud capture
 
 ---
 
-## ⚙️ Requirements
--pandas numpy scikit-learn matplotlib
+⚖️ Confusion Matrix Summary
+
+Metric| Count
+True Positives| 81
+False Positives| 17
+False Negatives| 17
+True Negatives| 56,847
+
+✔ Very low false alarm rate
+✔ Strong fraud detection coverage
+✔ Balanced and stable predictions
+
+---
+
+🧠 Risk Segmentation
+
+Risk Level| Count
+Low| 56,843
+Medium| 38
+High| 81
+
+💡 System Behavior
+
+- Low Risk → Normal transactions (auto-approved)
+- Medium Risk → Requires monitoring / verification
+- High Risk → Likely fraud (flagged for action)
+
+---
+
+💰 Cost Analysis (Business Perspective)
+
+Metric| Value
+False Positive Cost| 85
+False Negative Cost| 850
+Total Cost| 935
+Avg Cost per Transaction| 0.0164
+
+✔ Fraud loss dominates system cost (real-world behavior)
+✔ Model balances fraud detection vs customer friction
+✔ Suitable for cost-sensitive decision systems
+
+---
 
 ## 📂 Project Structure
-```
-
----
 
 ```text
 credit-card-fraud-detection/
 │
-├── Credit Card Fraud Detection | ML Pipeline (ROC-AUC 0.98).ipynb
+├── notebook.ipynb
 ├── fraud_predictions.csv
 ├── model_summary.csv
-├── requirements
+├── cost_analysis.csv
+├── risk_distribution.csv
+├── requirements.txt
 └── README.md
 ```
 
 ---
 
-## 📈 Workflow
+⚙️ Workflow
 
-1. Data loading and exploration  
-2. Data preprocessing and cleaning  
-3. Feature scaling and transformation  
-4. Handling class imbalance  
-5. Training multiple machine learning models  
-6. Model evaluation using cross-validation (ROC-AUC)  
-7. Model selection based on performance  
-8. Threshold tuning for optimal fraud detection  
-9. Final evaluation on test data  
-10. Saving predictions and model results
+1. Data preprocessing and scaling
+2. Train-test split with stratification
+3. Model training (Logistic Regression, Random Forest, Gradient Boosting)
+4. Cross-validation using ROC-AUC
+5. Best model selection
+6. Probability prediction ("predict_proba")
+7. Threshold optimization using F1-score
+8. Final classification
+9. Risk scoring (0–100)
+10. Risk level segmentation
+11. Cost-based evaluation
+12. Results export and reporting
 
-## 🧠 Conclusion
+---
 
-This project demonstrates an end-to-end machine learning solution for credit card fraud detection using a highly imbalanced dataset.
+🧩 Key Features
 
-The final model achieves strong performance, with a high ROC-AUC score and strong recall for fraud cases, making it effective for real-world fraud detection scenarios.
+- Handles extreme class imbalance effectively
+- Uses ROC-AUC for robust evaluation
+- Implements threshold tuning for decision optimization
+- Builds risk scoring system (not just classification)
+- Includes business-aware cost modeling
+- Produces deployment-ready outputs (CSV)
 
-Key takeaway: in fraud detection systems, maximizing recall is more important than achieving perfect accuracy, as missing fraudulent transactions is more costly than raising false alarms.
+---
+
+🏦 Real-World Relevance
+
+This system reflects how fraud detection works in financial institutions:
+
+- Risk-based decision making instead of binary classification
+- Cost-sensitive optimization (fraud loss vs user friction)
+- Multi-level alert system (Low / Medium / High risk)
+- Scalable pipeline for production deployment
+
+---
+
+🏁 Conclusion
+
+This project demonstrates a complete transition from a traditional ML model to a production-style fraud detection system.
+
+It combines:
+
+- Strong predictive performance
+- Business-aware evaluation
+- Risk-based decision logic
+
+The result is a robust, interpretable, and practical fraud detection engine suitable for real-world financial applications.
+
+---
+
+👤 Author
+
+Abiodun Adeteye
+Machine Learning Engineer | Data & AI Systems Builder
+Focused on building real-world, production-ready ML solutions
