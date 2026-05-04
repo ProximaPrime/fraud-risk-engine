@@ -51,10 +51,11 @@ This project builds an end-to-end fraud detection pipeline that:
 
 🧠 Risk Segmentation
 
-Risk Level| Count
-Low| 56,843
-Medium| 38
-High| 81
+| Risk Level | Count  |
+|-----------|--------|
+| Low       | 56,843 |
+| Medium    | 38     |
+| High      | 81     |
 
 💡 System Behavior
 
