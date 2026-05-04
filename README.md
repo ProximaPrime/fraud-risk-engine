@@ -36,11 +36,12 @@ This project builds an end-to-end fraud detection pipeline that:
 
 ⚖️ Confusion Matrix Summary
 
-Metric| Count
-True Positives| 81
-False Positives| 17
-False Negatives| 17
-True Negatives| 56,847
+| Metric            | Count  |
+|------------------|--------|
+| True Positives   | 81     |
+| False Positives  | 17     |
+| False Negatives  | 17     |
+| True Negatives   | 56,847 |
 
 ✔ Very low false alarm rate
 ✔ Strong fraud detection coverage
